@@ -47,15 +47,22 @@ public:
 
 
 int main() {
-	String arr(5);
+	String arr1;
+	String arr2(5);
+	String arr3((char*)"Hello");
+	
 
-	cout << "Enter ";
-	arr.SetLine();
+	cout << "You need full first massive \n";
+	arr1.SetLine();
+	cout << "You need full second massive \n";
+	arr2.SetLine();
+	String arr4(arr2);
 
-	arr.Print();
-	cout << endl;
-	String a(arr);
-
-	a.Print();
+	cout << "Your massives \n";
+	arr1.Print(); cout << endl;
+	arr2.Print(); cout << endl;
+	arr3.Print(); cout << endl;
+	arr4.Print(); cout << endl;
+	
 	return 0;
 }
